@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class HelloController {
 
-    @RequestMapping("/")
-    @ResponseBody
+    @RequestMapping("/")     //indica qual URL é para chamar
+    @ResponseBody            //para devolver a string direto para o navegador, ao invés de procurar uma página com o nome da string
     public String hello() {
         return "Hello World!";
     }
